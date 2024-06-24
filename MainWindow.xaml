@@ -1,0 +1,30 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Калькулятор веса" Height="250" Width="600">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <Label HorizontalAlignment="Center">Калькулятор ИМТ расчет веса</Label>
+            <StackPanel>
+                <Label HorizontalAlignment="Center">Введите ваш рост (в см)</Label>
+                <TextBox Name="TxtHeight"></TextBox>
+                <Label HorizontalAlignment="Center">Введите ваш вес (в кг)</Label>
+                <TextBox Name="TxtWeight"></TextBox>
+                <Label></Label>
+            </StackPanel>
+            <StackPanel>
+                <Button Name="BtnCalculate" Click="BtnCalculateOnClick">Рассчитать</Button>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Name="TxtResult"></TextBlock>
+                <TextBlock Name="TxtStatus"></TextBlock>
+                <TextBlock Name="TxtRecomendations"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
